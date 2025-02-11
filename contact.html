@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Ecole Supérieur de Survie Malesherbes</title>
+		<link rel="icon" href="images/logos/logo.png" />
+		<link rel="stylesheet" href="./styles/index.css" />
+		<link rel="stylesheet" href="./styles/nav.css" />
+		<link rel="stylesheet" href="./styles/contact.css" />
+	</head>
+	<body>
+		<header>
+			<h1>école Supérieur de Survie Malesherbes</h1>
+			<a href="./index.html"><img alt="Logo de l'école" src="images/logos/logo.png"/></a>
+		</header>
+		<nav>
+			<ul id="menu-accordeon">
+				<li><a class="menu_flex" href="./index.html">Acceuil</a>
+					<ul>
+						<li><a href="./index.html#presentation">Présentation</a></li>
+						<li><a href="./index.html#argumentation">Argumentation</a></li>
+						<li><a href="./index.html#video">Video</a></li>
+					</ul>
+				</li>
+				<li><a class="menu_flex" href="./formations.html">Formations</a>
+					<ul>
+						<li><a href="./formations.html#première_année">Première année</a></li>
+						<li><a href="./formations.html#deuxième_année">Deuxième année</a></li>
+						<li><a href="./formations.html#cours">Cours</a></li>
+						<li><a href="./formations.html#examens">Examens</a></li>
+					</ul>
+				</li>
+				<li><a class="ici menu_flex" href="./contact.html">Contact</a>
+					<ul>
+						<li><a href="./contact.html#coordonnées">Coordonnées</a></li>
+						<li><a href="./contact.html#formulaire">Formulaire de contact</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<section id="coordonnées">
+				<h1>Coordonnées</h1>
+				<article class="flexbox">
+					<ul>
+						<li>Pays : Guyane (France)</li>
+						<li>Ville : Saül</li>
+						<li>Code Postal : 97314</li>
+						<li>Adresse : 17 Avenue du Grand Chêne</li>
+						<li>Numéro de Téléphone : 01 45 67 78 22 15</li>
+						<li>Adresse E-mail : direction.essm@gmail.com</li>
+					</ul>		
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1019127.5888511618!2d-53.43327025!3d3.8171733999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d732a4edf6f38f9%3A0x618f9688e2156e98!2sSa%C3%BCl%2097314%2C%20Guyane%20fran%C3%A7aise!5e0!3m2!1sfr!2sfr!4v1701011750337!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</article>
+			</section>
+			<section id="formulaire">
+				<h1>Formulaire de contact</h1>
+				<article>
+					<form>
+						<div>
+							<label for="name"> Nom </label>
+							<input type="text" id="name" name="name" placeholder="Entrez votre Nom" class="retaillage"/>
+						</div>
+						<div>
+							<label for="forename"> Prénom </label>
+							<input type="text" id="forename" name="forename" placeholder="Entrez votre Prénom" class="retaillage"/>
+						</div>
+						<div>
+							<label for="datenaissance"> Date de Naissance </label>
+							<input type="date" id="datenaissance" name="datenaissance" class="retaillage"/>
+						</div>
+						<div>
+							<label for="pays"> Pays de Résidence </label>
+							<input type="text" id="pays" name="pays" placeholder="Entrez votre Pays de résidence" class="retaillage"/>
+						</div>
+						<div>
+							<label for="ville"> Ville de Résidence </label>
+							<input type="text" id="ville" name="ville" placeholder="Entrez votre Ville de résidence" class="retaillage"/>
+						</div>
+						<div>
+							<label for="code_postal"> Code Postal </label>
+							<input type="text" id="code_postal" name="code_postal" placeholder="Entrez votre Code Postal" class="retaillage"/>
+						</div>
+						<div>
+							<label for="adresse"> Adresse </label>
+							<input type="text" id="adresse" name="adresse" placeholder="Entrez votre Adresse" class="retaillage"/>
+						</div>
+						<div>
+							<label for="telephone">Numéro de téléphone :</label>
+							<input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" placeholder="Entrez votre numéro de téléphone" class="retaillage">
+						</div>
+						<div>
+							<label for="admail"> Adresse Mail </label>
+							<input type="email" id="admail" name="admail" placeholder="Entrez votre Adresse Mail" class="retaillage"/>
+						</div>
+						
+						<div>
+							<label for="fichier"> Diplôme de licence STAPS </label>
+							<div>
+								<input type="file" id="fichier" name="fichier" accept=".pdf" class="fond_accentué">
+							</div>
+						</div>
+						<div>
+							<label for="choixfilière"> Quelle filière envisageriez-vous faire en deuxième année ? </label>
+							<select id="choixfilière" name="choixFeedback" class="fond_accentué retaillage" >
+								<option value="smhs">Survie en Milieu Hostile et Sauvage</option>
+								<option value="tis">Technologies et Innovations pour la Survie</option>
+								<option value="edes">Ecologie et Durabilité en Survie</option>
+							</select>
+						</div>
+						<div>
+							<label for="story">Laissez nous un message !</label>
+							<textarea id="story" name="story" rows="5" cols="33" class="retaillage"></textarea>
+						</div>
+						<div class="renvoyer_effacer">
+							<input type="submit" class="gras"/>
+							<input type="reset" class="gras"/>
+						</div>
+					</form>
+				</article>
+				<article class="balise_haut_page">
+					<a href="#top">revenir en haut de la page</a>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<p>Fait par : Mathias Petibon-Gravier et Lucas Vita</p>
+			<address>
+				<p><a href="textes/rapport.pdf">Rapport.pdf</a></p>
+				<p><a href="textes/rapport.docx">Rapport.txt</a></p>
+			</address>
+			<div>
+				<img alt="Logo de l'école" src="images/logos/logo.png">
+			</div>
+			<div class="reseaux">
+				<img alt="Instagram" src="images/réseaux/instagram.png">
+				<img alt="Facebook" src="images/réseaux/facebook.png">
+				<img alt="Tik Tok" src="images/réseaux/tik_tok.png">
+				<img alt="Linkedin" src="images/réseaux/linkedin.png">
+				<img alt="Tweeter" src="images/réseaux/tweeter.png">
+				<img alt="Youtube" src="images/réseaux/youtube.png">
+			</div>
+		</footer>
+	</body>
+</html>

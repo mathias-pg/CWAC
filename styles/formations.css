@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+/*-Fond d'écran de la page-*/
+html {
+	background-image : url("../images/fonds/fond_ecran2.jpeg");
+	background-size : cover;
+	background-repeat : no-repeat;
+	background-attachment : fixed;
+	color : white;
+}
+/*-------------------------*/
+
+/*-----------------------------------------------------------*/
+
+/*-article filières qui contient la présentation des 3 filières-*/
+.filières {
+  margin : 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/*---------------------------------------------------------------*/
+
+/*-Article de chaque présentation de filière-*/
+.filières article {
+  border : 3px solid grey;
+  border-radius : 30px;
+  width: 30%; 
+  margin: 20px;
+  text-align: center;
+}
+/*--------------------------------------------*/
+
+/*-Images présente dans chaque présentation de filière-*/
+.filières img {
+	width : 15rem;
+	height : 10rem;
+	border-radius : 20%;
+}
+/*-----------------------------------------------------*/
+
+/*-Requêtes pour changer l'affichage des 3 blocs de présentation de filière en fonction de la taille de l'écran-*/
+@media (max-width: 1385px) {
+  .filières article {
+      width: 44%; 
+  }
+}
+
+@media (max-width: 1000px) {
+  .filières article {
+      width: 90%; 
+  }
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+
+/*-Tableaux-*/
+main table, main table td, main table th {
+	padding         : 5px;        
+	text-align      : center;      
+	vertical-align  : center;
+	text-decoration : none;
+	font-family : warpaint;
+}
+
+main table th {
+	color : black;
+	
+}
+
+/*-Flexbox pour les titre de colonnes Matières et le logo-*/
+.milieu {
+	display : flex;
+	align-items : center;
+	min-width : 10rem;
+	flex-wrap : wrap;
+	gap : 15px;
+}
+/*---------------------------------------------------------*/
+
+main table thead th, main table tfoot th{
+	color       : #c6c6c6;
+	font-weight : bold;
+}
+
+main table tbody tr{
+	background  : #929696;
+}
+
+main section table {
+	font-size : 2.5rem;
+	text-decoration : none;
+	margin : 2rem;
+}
+
+td {
+	font-size : 1.7rem;
+}
+
+main section article table{
+	margin-top : 30px;
+	margin-bottom : 30px;
+}
+
+caption {
+	font-size : 3rem;
+}
+
+/*-Couleur de fond des thead pour chaque tableau-*/
+.premiere_annee {
+  background : #262626;
+}
+.survie_hostile {
+  background : #221f31;
+}
+.innovation {
+  background: #223c4d;
+}
+.ecologie {
+  background: #236940;
+}
+/*-------------------------------------------------*/
+
+/*-Logos de première année et des filières dans les tableaux-*/
+.logo_filiere {
+	min-width : 5.5rem;
+	height : 4.5rem;
+	border-radius : 15px;
+}
+/*------------------------------------------------------------*/
+
+/*-Animation : Flamme-*/
+.container{
+  margin:80px auto;
+  width: 60px;
+  height: 60px;
+  position:relative;
+  transform-origin:center bottom;
+  animation-name: flicker;
+  animation-duration:3ms;
+  animation-delay:200ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.flame{
+  bottom:0;
+  position:absolute;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  transform:rotate(-45deg) scale(1.5,1.5);
+}
+
+.yellow{
+  left:15px; 
+  width: 30px;
+  height: 30px;
+  background:gold;
+  box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange{
+  left:10px; 
+  width: 40px;
+  height: 40px;
+  background:orange;
+  box-shadow: 0px 0px 9px 4px orange;
+}
+
+.red{
+  left:5px;
+  width: 50px;
+  height: 50px;
+  background:OrangeRed;
+  box-shadow: 0px 0px 5px 4px OrangeRed;
+}
+
+.white{
+  left:15px; 
+  bottom:-4px;
+  width: 30px;
+  height: 30px;
+  background:white;
+  box-shadow: 0px 0px 9px 4px white;
+}
+
+.circle{
+  border-radius: 50%;
+  position:absolute;  
+}
+
+.blue{
+  width: 10px;
+  height: 10px;
+  left:25px;
+  bottom:-25px; 
+  background: SlateBlue;
+  box-shadow: 0px 0px 15px 10px SlateBlue;
+}
+
+.black{
+  width: 40px;
+  height: 40px;
+  left:10px;
+  bottom:-60px;  
+  background: black;
+  box-shadow: 0px 0px 15px 10px black;
+}
+
+@keyframes flicker{
+  0%   {transform: rotate(-1deg);}
+  20%  {transform: rotate(1deg);}
+  40%  {transform: rotate(-1deg);}
+  60%  {transform: rotate(1deg) scaleY(1.04);}
+  80%  {transform: rotate(-2deg) scaleY(0.92);}
+  100% {transform: rotate(1deg);}
+}
+/*----------------*/
+
+/*-------------*/
+
+
+/*-Images de la section Examens-*/
+.examen {
+	float : right;
+	width : 15rem;
+	height : 12rem;
+	border-radius : 10%;
+	margin-right : 70px;
+	margin-left : 25px;
+	margin-bottom : 10px;
+	margin-top : 10px;
+}
+/*------------------------------*/
+
+/*-Images du diplôme de licence et de master-*/
+.licence img{
+  width : 8rem;
+  height : 8rem;
+  border-radius : 10px;
+  margin-left : 20px;
+}
+/*--------------------------------------------*/
+
+/*-Images de billets-*/
+.prix img{
+  width : 8rem;
+  height : 4rem;
+  margin-left : 20px;
+}
+/*--------------------*/
+

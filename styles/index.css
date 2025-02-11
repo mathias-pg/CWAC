@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/*-Polices importés : Campus et Warpaint-*/
+@font-face {
+	font-family : 'campus';
+	src : url('../polices/campus.ttf');
+}
+@font-face {
+	font-family : 'warpaint';
+	src : url('../polices/Warpaint.ttf');
+}
+/*--------------------------------------*/
+
+*{
+	margin  : 0;
+	padding : 0;
+}
+
+/*-Passage du Header et du menu de navigation en flexbox-*/
+header, #menu-accordeon {
+	display : flex;
+	justify-content: space-around;
+	flex-wrap: wrap; 
+	flex-direction : row;
+	align-items : center;
+}
+/*---------------------------------------------------------*/
+
+header{
+	min-width : 100%;
+	min-height : 15rem;
+	text-indent : 30px;
+}
+
+/*-Logo de l'école-*/
+header img {
+	width : 15rem;
+	height : 12rem;
+	transition : all .5s;
+	border-radius : 10% / 50%;
+	margin: 1rem;
+}
+/*------------------*/
+
+/*-Titre de l'école-*/
+header h1 {
+	text-align : center;
+	margin-right : auto;
+	margin-left : auto;
+	font-family : campus;
+	font-size : 3.5rem;
+	text-decoration: underline overline green;
+}
+/*-------------------*/
+
+/*-Change la taille du logo quand la souris passe dessus-*/
+header a img:hover {
+	box-shadow: 1px 1px 1px 10px #09708e;
+	transform : scale(1.075);	
+}
+/*--------------------------------------------------------*/
+
+/*-Titre de section-*/
+h1 {
+	font-size       : 3rem;
+	margin     : 3rem;
+	font-family : campus;
+}
+/*------------------*/
+
+/*-Titre d'article-*/
+h2 {
+	margin : 3rem;
+	font-size       : 2.5rem;
+	font-family : campus;
+}
+/*-----------------*/
+
+/*-Mettre une image animé dans les titres de sections, titre d'article et titres de tableaux-*/
+h1, h2, caption {
+	background-image: url("../images/fond_titre.gif");
+	-webkit-background-clip : text;
+	-webkit-text-fill-color : transparent;
+}
+/*--------------------------------------------------------------------------------------------*/
+
+/*-Texte des articles et des tableaux-*/
+article p, article ul, article form {
+	margin : 50px;
+	font-family : warpaint;
+	font-size : 2rem;
+}
+/*-------------------------------------*/
+
+/*-Souligner le texte important-*/
+b {
+	text-decoration: underline;
+}
+/*-------------------------------*/
+
+/*-Bas de page-*/
+footer{
+	font-family : warpaint;
+    background: rgb(11,74,149);
+	background: linear-gradient(121deg, rgba(11,74,149,0.8323704481792717) 16%, rgba(10,112,34,0.76234243697479) 41%, rgba(32,60,149,0.8575805322128851) 70%, rgba(6,106,39,0.835171568627451) 90%);
+	padding          : 0.5rem 1.5rem;
+}
+
+footer p{
+	font-size : 2rem;
+	text-align : center;
+}
+
+footer div {
+	margin : 20px;
+	text-align : center;
+}
+
+footer div img {
+	width : 15rem;
+	height : 12rem;
+}
+
+footer .reseaux img {
+	width : 100px;
+	height : 80px;
+	margin-right : 50px;
+	margin-left : 50px;
+}
+/*-----------------*/
+
+.balise_haut_page {
+	font-family : warpaint;
+	font-size : 2rem;
+	text-align : center;
+	margin : 20px;
+}

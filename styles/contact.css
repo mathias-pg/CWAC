@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*-Fond décran de la page-*/
+html {
+	background-image : url("../images/fonds/fond_ecran3.jpg");
+	background-size : cover;
+	background-repeat : no-repeat;
+	background-attachment : fixed;
+	color : white;
+}
+/*------------------------*/
+
+
+/*-Flexbox pour l'article de Coordonnées-*/
+.flexbox {
+	display : flex;
+	flex-wrap: wrap; 
+	flex-direction : row;
+	align-items : center;
+	justify-content: space-between;
+	margin-left : 30px;
+}
+/*----------------------------------------*/
+
+/*-Carte Google Maps-*/
+iframe {
+	width : 40rem;
+	height : 22rem;
+	border-radius : 30px;
+	margin-right : 70px;
+}
+/*--------------------*/
+
+/*-Formulaire de contact-*/
+form {
+	background-image  : url('../images/fonds/fond_formulaire.jpg');
+	background-size : cover;
+	font-size : 20px;
+	margin : 20px;
+	padding : 10px;
+}
+
+.fond_accentué {
+	background  : silver;
+}
+
+.bordure, form {
+	border-radius: 30px;
+}
+
+div {
+	margin : 20px;
+}
+
+.retaillage {
+	display: inline-block;
+    width: 100%;  
+}
+
+.renvoyer_effacer {
+    text-align: center;
+}
+
+input[type="submit"],
+input[type="reset"] {
+	font-size:25px;
+	border-radius: 10px;
+	border : 2px solid;
+    display: inline-block;
+	width: 35%;
+    margin: 0 80px; 
+}
+/*--------------------*/
+
